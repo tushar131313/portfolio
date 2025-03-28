@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>PRAJWAL Portfolio</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: black;
+}
+nav{
+    width: 100%;
+    height: 10vh;
+    position: sticky;
+}
+.nav-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo{
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.logo span{
+    color: #cc4b14;
+    text-shadow: 0 0 10px #fd0d00;
+}
+.hamburg,
+.cancel{
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    color: white;
+    display: none;
+    font-size: clamp(2.5rem, 0.5rem + 5vw, 3rem);
+}
+.nav-container .links{
+    display: flex;
+}
+.nav-container .links a{
+    position: relative;
+    font-size: 1.2rem;
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: 550;
+    transition: 0.3s linear;
+}
+.nav-container .links a::before{
+    position: absolute;
+    content: "";
+    bottom: -3px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: #ea670f;
+    transition: 0.2s linear;
+}
+.nav-container .links a:hover::before{
+    width: 100%;
+}
+.nav-container .links a:hover{
+    color: #e6500a;
+}
+.dropdown{
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    transform: translateY(-500px);
+    width: 100%;
+    height: auto;
+    backdrop-filter: blur(4px) brightness(40%);
+    box-shadow:  0 0 20px black;
+    transition: 0.2s linear;
+}
+.dropdown .links a{
+    display: flex;
+    color: white;
+    text-decoration: none;
+    justify-content: center;
+    padding: 15px 0;
+    align-items: center;
+    transition: 0.2s linear;
+}
+.dropdown .links a:hover{
+    background-color: #ee630e;
+}
+
+.cert {
+    width: 50%;
+    height: auto;
+    min-width: 250px;
+    padding: 50px 90px ;
+    padding-left: 100px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(168, 37, 37);
+    border: 1px solid;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(25, 22, 22, 0.09);
+    margin: 50px 400px;
+    transition: 0.2s ease;
+    position: relative;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    transition: ease-in-out;
+    
+}
+.con .cert {
+    font-weight: 600;
+    
+
+}
+.con h1{
+    color: aliceblue;
+}
+
+.con h2{
+    color: aliceblue;
+}
+
+.con h3{
+    color: aliceblue;
+}
+
+.info p {
+     font-weight: 800;
+     width: 320px;
+    height: 6vh;
+    margin: 50px 560px;
+    background-color: #d74510;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 200%;
+    font-weight: 700;
+    border-radius: 5px;
+    transition: 0.2s linear;
+    padding-left: 140px;
+    align-self: center;
+    justify-content: ;
+    
+
+
+
+
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                TUSHAR  <span>SHILLAR</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="index.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="skill.html">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="resume.html">Resume</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600"><a href="contact.html">Contact</a></div>
+            </div>
+        </div>
+    </nav>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <section class="con">
+        <div class="info">
+            <p>Info</p>
+                       
+        </div>
+        <div class="cert">
+            <h1>Email: tusharshillar@gmail.com.com </h1>
+            <h2>Phone no: 7498550933</h2>
+            <h3>Address: jaitala</h3>
+        </div>
+
+    </section>
+
+
+</body>
+</html>
